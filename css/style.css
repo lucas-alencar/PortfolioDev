@@ -1,0 +1,69 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Largura da barra de rolagem */
+}
+
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+/* Customize your introduction section styles */
+#index-banner {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.introduction {
+  z-index: 2;
+  margin-left: 10%;
+}
+
+.buttonsIntro {
+  margin-top: 20px;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  z-index: 1;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax img {
+  width: 100%;
+  height: auto;
+}
+
+/*Cursor de digitação*/
+.cursor{
+  display: inline-block;
+  width: 2px;
+  background-color: #fafafa;
+  margin-left: 0.1rem;
+  animation: blink 0.8s infinite;
+}
+@keyframes blink{
+  0% {background-color: #fafafa;}
+  50%{background-color: transparent;}
+  100%{background-color: #fafafa;}
+}
+/*Fim cursor de digitação*/

@@ -1,0 +1,44 @@
+
+/*parallax*/
+.about-me-parallax {
+    /* The image used */
+    background-image: url("./../images/Languages.png");
+    filter: brightness(0.2) opacity(0.9) blur(4px);
+    /* Set a specific height */
+    min-height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-device-width: 690px) {
+    .about-me-text-container {
+        top: 190vh;    
+    }
+}
+
+@media only screen and (min-device-width: 400px) {
+    .about-me-text-container {
+        top: 200vh;    
+    }
+}
+
+.about-me-text-container {
+    margin-left: 15vw;
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-me-text-container p{
+    margin-left: 33vw;
+    text-align: justify;
+    width: 80vw;
+}
+
+/*parallax end*/    
